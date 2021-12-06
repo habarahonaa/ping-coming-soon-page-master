@@ -1,0 +1,50 @@
+.landing__logo img {
+    height: 20px;
+}
+
+.title {
+    color: $neutral-gray;
+    font-size: 1.6rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+}
+
+#emailInput {
+    align-self: center;
+    border: 1px solid $light-blue;
+    border-radius: 20px;
+    padding: 0.75rem 1.4rem;
+    width: 90%;
+}
+
+::placeholder {
+    color: $light-blue;
+}
+
+.form__btn {
+    align-self: center;
+    background-color: $primary-blue;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: $medium;
+    padding: 0.8rem;
+    width: 90%;
+}
+
+.container__illustration img {
+    align-self: center;
+    width: 100%;
+}
+footer {
+    text-align: center;
+    .footer__icons {
+        color: $primary-blue;
+    }
+    p {
+        color: $neutral-gray;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,39 @@
+// Color variables
+$primary-blue: hsl(223, 87%, 63%);
+$light-blue: hsl(223, 100%, 88%);
+$light-red: hsl(354, 100%, 66%);
+$neutral-gray: hsl(0, 0%, 59%);
+$dark-blue: hsl(209, 33%, 12%);
+
+// Font stack declarations
+$font-stack: 'Libre Franklin', sans-serif;
+$thin: 300;
+$medium: 600;
+$bold: 700;
+
+// Mix-ins
+
+@mixin respond-small {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  
+  @mixin respond-large {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+  
+// Utility classes (spans, etc)
+
+body {
+  font-family: $font-stack;
+  font-size: 20px;
+  font-weight: $thin;
+}
+
+.is-bold {
+  color: $dark-blue;
+  font-weight: $bold;
+}

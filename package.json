@@ -1,0 +1,26 @@
+{
+  "name": "ping-coming-soon-page-master",
+  "version": "1.0.0",
+  "description": "Frontend Mentor Ping Coming Soon Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "node-sass sass/main.scss css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/habarahonaa/ping-coming-soon-page-master.git"
+  },
+  "author": "habarahonaa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/habarahonaa/ping-coming-soon-page-master/issues"
+  },
+  "homepage": "https://github.com/habarahonaa/ping-coming-soon-page-master#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
+  }
+}
