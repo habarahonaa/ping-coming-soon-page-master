@@ -52,15 +52,15 @@
   padding: 0.8rem;
   width: 90%;
 
+  &:hover {
+    background-color: $hover-blue;
+  }
+
   @include respond-large {
     border-radius: 35px;
     width: 25%;
     padding: 1rem;
   }
-}
-
-.form__btn--disabled:hover {
-  background-color: $hover-blue;
 }
 
 .form__help {

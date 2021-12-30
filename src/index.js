@@ -23,7 +23,6 @@ function main(): void {
 
   const invalidElement = (formEmail: HTMLElement, noEmail: boolean): void => {
     formEmail.classList.add("is-invalid");
-    formButton.classList.add("form__btn--disabled");
     if (noEmail) {
       helpText.textContent =
         "Whoops! It looks like you forgot to add your email";

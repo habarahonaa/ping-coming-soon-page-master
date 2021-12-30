@@ -97,7 +97,7 @@ input {
   -webkit-appearance: none;
   border-radius: 0; }
 
-body {
+html {
   font-family: "Libre Franklin", sans-serif;
   font-size: 20px;
   font-weight: 300; }
@@ -213,14 +213,13 @@ body {
   font-weight: 600;
   padding: 0.8rem;
   width: 90%; }
+  .form__btn:hover {
+    background-color: #7195f5; }
   @media (min-width: 1440px) {
     .form__btn {
       border-radius: 35px;
       width: 25%;
       padding: 1rem; } }
-
-.form__btn--disabled:hover {
-  background-color: #7195f5; }
 
 .form__help {
   font-size: small;
