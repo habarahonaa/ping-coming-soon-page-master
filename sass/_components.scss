@@ -1,50 +1,94 @@
 .landing__logo img {
-    height: 20px;
+  height: 20px;
+
+  @include respond-large {
+    height: 30px;
+  }
 }
 
 .title {
-    color: $neutral-gray;
-    font-size: 1.6rem;
+  color: $neutral-gray;
+  font-size: 1.6rem;
+
+  @include respond-large {
+    font-size: 2.4rem;
+  }
 }
 
 .subtitle {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
-#emailInput {
-    align-self: center;
-    border: 1px solid $light-blue;
-    border-radius: 20px;
-    padding: 0.75rem 1.4rem;
-    width: 90%;
+.emailInput {
+  align-self: center;
+  border: 1px solid $light-blue;
+  border-radius: 20px;
+  padding: 0.75rem 1.4rem;
+  width: 90%;
+
+  @include respond-large {
+    border-radius: 35px;
+    width: 73%;
+    padding: 1rem 1.5rem;
+  }
 }
 
 ::placeholder {
-    color: $light-blue;
+  color: $light-blue;
+}
+
+.form__helper {
+  display: block;
 }
 
 .form__btn {
-    align-self: center;
-    background-color: $primary-blue;
-    border: none;
-    border-radius: 20px;
-    color: white;
-    font-weight: $medium;
-    padding: 0.8rem;
-    width: 90%;
+  align-self: center;
+  background-color: $primary-blue;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 4px 5px 0px $light-blue;
+  color: white;
+  font-weight: $medium;
+  padding: 0.8rem;
+  width: 90%;
+
+  @include respond-large {
+    border-radius: 35px;
+    width: 25%;
+    padding: 1rem;
+  }
+}
+
+.form__btn--disabled:hover {
+  background-color: $hover-blue;
+}
+
+.form__help {
+  font-size: small;
+  font-style: italic;
+  margin: 12px 0;
+
+  @include respond-large {
+    order: 1;
+    margin-left: 1.1rem;
+  }
 }
 
 .container__illustration img {
-    align-self: center;
-    width: 100%;
+  align-self: center;
+  width: 100%;
+
+  @include respond-large {
+    width: 800px;
+  }
 }
 footer {
-    text-align: center;
-    .footer__icons {
-        color: $primary-blue;
-    }
-    p {
-        color: $neutral-gray;
-        font-size: 12px;
-    }
+  text-align: center;
+  .footer__icons {
+    color: $primary-blue;
+  }
+  p {
+    color: $neutral-gray;
+    font-size: 12px;
+  }
 }

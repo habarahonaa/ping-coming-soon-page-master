@@ -1,49 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Ping coming soon page</title>
-  <!-- Google Font Imports using <link> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
-  <!-- End of Font Imports-->
-  <!-- Add Font Awesome kit for social icons -->
-  <script src="https://kit.fontawesome.com/db9984aa53.js" crossorigin="anonymous"></script>
-  <!-- End FA import -->
-  <link rel="stylesheet" href="./css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Ping coming soon page</title>
+    <!-- Google Font Imports using <link> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End of Font Imports-->
+    <!-- Add Font Awesome kit for social icons -->
+    <script
+      src="https://kit.fontawesome.com/db9984aa53.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- End FA import -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
 
-<body>
-  <div class="container">
-    <header class="landing__logo">
-      <img src="./images/logo.svg" alt="Ping Logo" />
-    </header>
-    <main class="container__main">
-      <section class="main__text">
-        <h1 class="title">We are launching <span class="is-bold">soon!</span></h1>
-        <h2 class="subtitle">Subscribe and get notified</h2>
-      </section>
-      <form action="" novalidate>
-        <input aria-label="Email Input" type="email" name="email" id="emailInput" placeholder="Your email address...">
-        <button aria-label="Notify Me" class="form__btn">Notify Me</button>
-      </form>
-      <figure class="container__illustration">
-        <img src="./images/illustration-dashboard.png" alt="" />
-      </figure>
-    </main>
-    <footer>
-      <section class="footer__icons">
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-instagram"></i>
-      </section>
-      <p class="footer__copyright">
-        &copy; Copyright Ping. All rights reserved.
-    </p>
-  </footer>
-  </div>
-</body>
+  <body>
+    <div class="container">
+      <header class="landing__logo">
+        <img src="./images/logo.svg" alt="Ping Logo" />
+      </header>
+      <main class="container__main">
+        <section class="main__text">
+          <h1 class="title">
+            We are launching <span class="is-bold">soon!</span>
+          </h1>
+          <h2 class="subtitle">Subscribe and get notified</h2>
+        </section>
+        <form action="" id="subscribe__form" novalidate>
+          <input
+            aria-label="Email Input"
+            type="email"
+            name="email"
+            class="emailInput"
+            placeholder="Your email address..."
+          />
+          <span class="form__help is-error is-hidden"></span>
+          <button aria-label="Notify Me" class="form__btn">Notify Me</button>
+        </form>
+        <figure class="container__illustration">
+          <img
+            src="./images/illustration-dashboard.png"
+            alt="Ping Dashboard Illustration"
+          />
+        </figure>
+      </main>
+      <footer>
+        <section class="footer__icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+        </section>
+        <p class="footer__copyright">
+          &copy; Copyright Ping. All rights reserved.
+        </p>
+      </footer>
+    </div>
+    <script src="./lib/index.js"></script>
+  </body>
 </html>

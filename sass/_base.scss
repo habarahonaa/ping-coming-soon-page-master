@@ -1,12 +1,13 @@
 // Color variables
 $primary-blue: hsl(223, 87%, 63%);
 $light-blue: hsl(223, 100%, 88%);
+$hover-blue: rgb(113, 149, 245);
 $light-red: hsl(354, 100%, 66%);
 $neutral-gray: hsl(0, 0%, 59%);
 $dark-blue: hsl(209, 33%, 12%);
 
 // Font stack declarations
-$font-stack: 'Libre Franklin', sans-serif;
+$font-stack: "Libre Franklin", sans-serif;
 $thin: 300;
 $medium: 600;
 $bold: 700;
@@ -14,18 +15,18 @@ $bold: 700;
 // Mix-ins
 
 @mixin respond-small {
-    @media (max-width: 480px) {
-      @content;
-    }
+  @media (max-width: 480px) {
+    @content;
   }
-  
-  @mixin respond-large {
-    @media (min-width: 1440px) {
-      @content;
-    }
+}
+
+@mixin respond-large {
+  @media (min-width: 1440px) {
+    @content;
   }
-  
-// Utility classes (spans, etc)
+}
+
+// Utility classes (spans, form validation, etc)
 
 body {
   font-family: $font-stack;
@@ -36,4 +37,17 @@ body {
 .is-bold {
   color: $dark-blue;
   font-weight: $bold;
+}
+
+.is-hidden {
+  display: none;
+}
+
+.is-invalid {
+  @extend .emailInput;
+  border: 1px solid $light-red !important;
+}
+
+.is-error {
+  color: $light-red;
 }
